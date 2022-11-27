@@ -1,0 +1,218 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    background-color: black;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+
+}
+.logo img {
+    width: 150px;
+    height: 100px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    /* flex-direction: row; */ 
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    height: 40px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #727272;
+}
+nav .active a,
+nav a:hover {
+    color: white;
+    border-bottom: 1px solid gainsboro;
+}
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/fundo2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+.column {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+.banner_headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    flex-wrap: wrap;
+    color: #fffefe;
+    text-shadow: 1px 2px 0px rgb(2, 2, 2);
+    text-align: center;
+}
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-size: 25px;
+    color: rgb(229, 226, 226);
+    text-shadow: 1px 2px 0px rgb(2, 2, 2);
+}
+section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.comprar {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+input {
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 45px;
+    background-color: #0071e3;
+    color: white;
+}
+.desc{
+    padding: 0;
+}
+.imagem2 {
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    color: rgb(229, 226, 226);
+    text-shadow: 1px 2px 0px rgb(2, 2, 2);
+}
+h4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: rgb(229, 226, 226);
+    text-shadow: 1px 2px 0px rgb(2, 2, 2);
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#444444;
+}
+.rodape {
+    width: 900px;
+    display: flex;
+    padding: 15px;
+}
+.beneficios1,.beneficios2,.beneficios3 {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 20px;
+    width: 100px;
+    height: 150px;
+    color: black;
+    background-color: black;
+}
+.rodape img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 45px;
+}
+.desc {
+    font-size: 14px;
+}
+#copy {
+    padding: 20px;
+    color: black;
+}
+
+@media (max-width:790px) {
+    .rodape{
+        flex-direction: column;
+        width: 200px;
+    }
+    .beneficios1,.beneficios2,.beneficios3 {
+        width: 200px;
+    }
+    #espec {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+}
+@media (max-width:650px) {
+    .menu {
+        display: none;
+    }
+}
+@media (max-width:330px) {
+    #espec {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+}
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
